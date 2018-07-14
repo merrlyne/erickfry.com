@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Insert Contact Form</title>
+<link rel="stylesheet" type="text/css" href="/homestyle.css">
+</head>
+
+<body>
+<div class="header">
+	    <div class="navbar">
+	        <ul>
+	            <li class="active" ><a href="index.html">Home</a></li>
+	            <li class="dropdown">
+	                <a href="#" class="dropbtn">Contacts Database</a>
+	                    <div class="dropdown-content">
+	                        <a href="/all_contacts.php">All Contacts</a>
+	                        <a href="/insert_contact.html">Add Contact</a>
+	                    </div>
+	            </li>
+		</ul>
+	    </div>
+	    <div class="contactbar">
+	        <ul>
+	            <li class="dropdown">
+	                <a href="#" class="dropbtn">About Me</a>
+	                    <div class="dropdown-content">
+	                        <a href="#">R&eacute;sum&eacute;</a>
+	                        <a href="#">LinkedIn</a>
+	                        <a href="#">GitHub</a>
+	                        <a href="#">Personal Projects</a>
+	                    </div>
+	            </li>
+		</ul>
+	    </div>
+    </div>
+<div class="content">
+<h2>Please add your contact details to my contact list.</h2>
+<form action="insert_contact.php" method="post">
+
+<table border=0>
+<tr><td>Phone Number</td>
+<td><input type=text name=PhoneNumber maxlength=11 size=11>(i.e. 9999999999)<br></td></tr>
+<tr><td>First Name</td>
+<td><input type=text name=FirstName maxlength=30 size=30><br></td></tr>
+<tr><td>Last Name</td>
+<td><input type=text name=LastName maxlength=30 size=30><br></td></tr>
+<tr><td>City</td>
+<td><input type=text name=City maxlength=30 size=30><br></td></tr>
+<tr><td>State</td>
+<td><input type=text name=State maxlength=2 size=2>(i.e. TX for Texas)<br></td></tr>
+<tr><td>
+<input type=submit value="Add Contact"></td></tr>
+</table>
+
+</form>
+</div>
+<div class="footer">Site Map: 
+    <ul>
+        <li>Movies Database
+            <ul>
+                <li><a href="all_movies.php">All Movies</a></li>
+                <li><a href="insert_form.html">Add Movie</a></li>
+            </ul>
+        </li>
+        <li>Contacts Database
+            <ul>
+                <li><a href="all_contacts.php">All Contacts</a></li>
+                <li><a href="insert_contact.html">Add Contact</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
